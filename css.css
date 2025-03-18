@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,10 +7,12 @@ body {
     text-align: center;
 }
 
+/* Main container */
 .container {
     margin-top: 50px;
 }
 
+/* Form Elements and Buttons */
 select, button, input {
     display: block;
     margin: 10px auto;
@@ -25,12 +27,15 @@ button {
     background-color: #007BFF;
     color: white;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Vehicle Banner */
 #vehicleBanner {
     background-color: #007BFF;
     color: white;
@@ -42,16 +47,20 @@ button:hover {
     width: 100%;
     text-align: left;
     padding-left: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Hide Elements */
 .hidden {
     display: none;
 }
 
+/* Heading Styles */
 h2 {
     margin-top: 80px;
 }
 
+/* Service Selection Boxes */
 .service-box {
     background-color: white;
     border: 1px solid #ccc;
@@ -62,15 +71,16 @@ h2 {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
 .service-box:hover {
     background-color: #f0f0f0;
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu Button */
 #menuButton {
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 10px;
     font-size: 30px;
@@ -80,6 +90,7 @@ h2 {
     color: white;
 }
 
+/* Side Menu for Driver's Guide */
 #sideMenu {
     position: fixed;
     top: 0;
@@ -89,11 +100,32 @@ h2 {
     background-color: white;
     box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    transition: 0.3s;
+    transition: right 0.3s;
+    text-align: left;
 }
 
 #sideMenu.open {
     right: 0;
+}
+
+/* Add Vehicle Button in Menu */
+#addVehicleButton {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-size: 16px;
+    color: #007BFF;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#addVehicleButton:hover {
+    background-color: #e9ecef;
 }
 
 /* Oil Change Reminder Bubble */
@@ -107,4 +139,21 @@ h2 {
     border-radius: 5px;
     text-align: center;
     margin: 20px auto;
+}
+
+/* Oil Change Form Styles */
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Back Button */
+button.back-button {
+    background-color: #6c757d;
+    margin-top: 10px;
+}
+
+button.back-button:hover {
+    background-color: #5a6268;
 }
