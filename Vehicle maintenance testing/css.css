@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+select, button, input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#vehicleBanner {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+.service-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 300px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-box:hover {
+    background-color: #f0f0f0;
+}
+
+/* Hamburger Menu */
+#menuButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#sideMenu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#sideMenu.open {
+    right: 0;
+}
+
+/* Oil Change Reminder Bubble */
+#oilChangeBubble {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+}
