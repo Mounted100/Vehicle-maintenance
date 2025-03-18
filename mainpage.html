@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <!-- Vehicle Banner -->
-    <div id="vehicleBanner"></div>
-
-    <!-- Hamburger Menu Button -->
-    <button id="menuButton">&#9776;</button>
+    <!-- Vehicle Banner with Menu Button Inside -->
+    <div id="vehicleBanner">
+        <span id="vehicleInfo"></span>
+        <!-- Hamburger Menu Button Moved to Top-Right -->
+        <button id="menuButton">&#9776;</button>
+    </div>
 
     <!-- Driver's Guide Menu -->
     <div id="sideMenu" class="hidden">
         <h2>Driver's Guide</h2>
         <p id="vehicleGuide">Vehicle information will go here.</p>
+        <!-- Add Vehicle Button -->
+        <button id="addVehicleButton" onclick="window.location.href='index.html'">
+            <strong><u>Add your vehicle here</u></strong>
+        </button>
     </div>
 
     <!-- Main Content -->
