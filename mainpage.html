@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="icon" href="/images/car-service.png" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Vehicle Banner -->
+    <div id="vehicleBanner"></div>
+
+    <!-- Hamburger Menu Button -->
+    <button id="menuButton">&#9776;</button>
+
+    <!-- Driver's Guide Menu -->
+    <div id="sideMenu" class="hidden">
+        <h2>Driver's Guide</h2>
+        <p id="vehicleGuide">Vehicle information will go here.</p>
+    </div>
+
+    <!-- Main Content -->
+    <h2>Select a Service</h2>
+    <div class="service-box" onclick="window.location.href='oil_change.html'">Oil Change</div>
+    <div class="service-box" onclick="window.location.href='tire_rotation.html'">Tire Rotation</div>
+    <div class="service-box" onclick="window.location.href='brake_inspection.html'">Brake Inspection</div>
+
+    <!-- Oil Change Reminder Bubble -->
+    <div id="oilChangeBubble" class="hidden">
+        <p>Your next oil change is due at <span id="nextOilChangeKM"></span> km.</p>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
